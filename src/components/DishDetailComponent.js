@@ -20,13 +20,19 @@ class DishDetailsComponent extends Component {
 
         const comments = commentsArray.map(item => {
 
+            const timeStamp = new Intl.DateTimeFormat('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: '2-digit'
+            }).format(new Date(Date.parse(item.date)))
+
             if (item == null)
                 return (<div></div>)
             else {
                 return (
                     <ul className="list-unstyled">
                         <li>{item.comment}</li>
-                        <li>--{item.author} , {item.date} </li>
+                        <li>--{item.author} , {timeStamp} </li>
                     </ul>
                 )
             }
@@ -46,13 +52,15 @@ class DishDetailsComponent extends Component {
         }
         else {
             return (
-                <div className="row">
-                    <div className="col-12 col-md-5 m-1">
-                        {this.renderDish(dish)}
-                    </div>
-                    <div className="col-12 col-md-5 m-1 align-self-center">
-                        <h4>Comments</h4>
-                        {this.renderComments(dish.comments)}
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 col-md-5 m-1">
+                            {this.renderDish(dish)}
+                        </div>
+                        <div className="col-12 col-md-5 m-1 align-self-center">
+                            <h4>Comments</h4>
+                            {this.renderComments(dish.comments)}
+                        </div>
                     </div>
                 </div>
             )
