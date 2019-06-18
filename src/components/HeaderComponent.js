@@ -46,7 +46,6 @@ class Header extends Component {
 
         return (
             <>
-
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
                     <ModalBody>
