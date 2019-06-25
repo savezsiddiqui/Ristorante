@@ -3,6 +3,7 @@ import {
     Button, Row, Col, Label
 } from 'reactstrap';
 import { Control, Form, Errors, actions } from 'react-redux-form';
+import { baseUrl } from '../shared/baseUrl';
 
 
 const required = (val) => val && val.length;
@@ -75,9 +76,8 @@ class Contact extends Component {
     }
 
     handleSubmit(values) {
-        console.log('Current State is: ' + JSON.stringify(values));
-        alert('Current State is: ' + JSON.stringify(values));
-        this.props.resetFeedbackForm();
+        this.props.postFeedback(values)
+        this.props.resetFeedbackForm()
         //event.preventDefault();
     }
 
