@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Ristorante/static/css/main.d8a1a198.chunk.css",
+    "main.js": "/Ristorante/static/js/main.0db0f3f2.chunk.js",
+    "main.js.map": "/Ristorante/static/js/main.0db0f3f2.chunk.js.map",
+    "runtime~main.js": "/Ristorante/static/js/runtime~main.1aa5791b.js",
+    "runtime~main.js.map": "/Ristorante/static/js/runtime~main.1aa5791b.js.map",
+    "static/css/2.23ebbe76.chunk.css": "/Ristorante/static/css/2.23ebbe76.chunk.css",
+    "static/js/2.46991738.chunk.js": "/Ristorante/static/js/2.46991738.chunk.js",
+    "static/js/2.46991738.chunk.js.map": "/Ristorante/static/js/2.46991738.chunk.js.map",
+    "index.html": "/Ristorante/index.html",
+    "precache-manifest.43229a9a8a7991d3073f58663c73a490.js": "/Ristorante/precache-manifest.43229a9a8a7991d3073f58663c73a490.js",
+    "service-worker.js": "/Ristorante/service-worker.js",
+    "static/css/2.23ebbe76.chunk.css.map": "/Ristorante/static/css/2.23ebbe76.chunk.css.map",
+    "static/css/main.d8a1a198.chunk.css.map": "/Ristorante/static/css/main.d8a1a198.chunk.css.map",
+    "static/media/font-awesome.css": "/Ristorante/static/media/fontawesome-webfont.fee66e71.woff"
+  }
+}
