@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { DISHES } from './shared/dishes';
 import Main from './components/MainComponent';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { ConfigureStore } from './redux/ConfigureStore';
 import { Provider } from 'react-redux';
 import './App.css';
@@ -22,11 +22,11 @@ class App extends Component {
 
     return (
       <Provider store={store}>
-        <BrowserRouter>
+        <HashRouter>
           <div className="App">
             < Main />
           </div>
-        </BrowserRouter>
+        </HashRouter>
       </Provider>
     );
   }
